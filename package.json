@@ -1,17 +1,29 @@
 {
-  "name": "RestfulTastAPI",
+  "name": "RestfulTaskAPI",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.6"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.7.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lkikui/RestfulTaskAPI.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "mongoose": "^5.0.4"
-  }
+  "bugs": {
+    "url": "https://github.com/Lkikui/RestfulTaskAPI/issues"
+  },
+  "homepage": "https://github.com/Lkikui/RestfulTaskAPI#readme"
 }

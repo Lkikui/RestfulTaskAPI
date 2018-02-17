@@ -11,6 +11,9 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json()); 
 
+//Angular
+app.use(express.static( __dirname + '/restfulTaskAngularApp/dist' ));
+
 /* ---------- database ---------- */
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/RestfulTaskAPI');
