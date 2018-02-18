@@ -1,17 +1,19 @@
-<div style="text-align:center">
+<div id = "wrapper"> <!-- wrapper -->
+
   <h1>Restful Tasks API</h1>
+
+  <button (click) = "onButtonClick($event)">Click to get all tasks</button>
+
+  <ul>
+    <li *ngFor = "let task of tasks">{{task.title}} - {{task.description}}</li>
+  </ul>
   <br>
-  <h2>All of The Tasks:</h2>
-</div>
 
-<ul style="margin: 0 auto; width: 500px">
-  <li *ngFor = "let task of tasks">{{task.title}} - {{task.description}}</li>
-</ul>
+  <!-- <h2 *ngIf = "tasks.length > 2" style = "text-align: center">The Third Task:</h2>
+  <ul style = "margin: 0 auto; width: 500px">
+    <li *ngIf = "tasks.length > 2">{{tasks[2].title}} - {{tasks[2].description}}</li>
+  </ul> -->
 
-<h2 *ngIf = "tasks.length > 2" style = "text-align: center">The Third Task:</h2>
-<ul style="margin: 0 auto; width: 500px">
-  <li *ngIf = "tasks.length > 2">{{tasks[2].title}} - {{tasks[2].description}}</li>
-</ul>
-
+</div> <!-- end of wrapper -->
 
 
