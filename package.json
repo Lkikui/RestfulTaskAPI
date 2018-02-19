@@ -9,7 +9,12 @@
     "mongoose": "^5.0.6"
   },
   "devDependencies": {
-    "@angular/cli": "^1.7.0"
+    "@angular/cli": "^1.7.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

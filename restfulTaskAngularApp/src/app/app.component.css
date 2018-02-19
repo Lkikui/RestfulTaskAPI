@@ -6,19 +6,20 @@ h1 {
     text-align: center;
 }
 
-button {
-    display: block;
-    margin: 0 auto;
+#getAllTasks {
     height: 45px;
     width: 160px;
     border-radius: 4px;
+    margin-bottom: 20px;
     background-image: -webkit-linear-gradient(top, #D1D3D4 0%, #415868 100%);
     color: white;
     font-size: 10pt;
 }
 
-ul {
-    width: 600px;
-    margin: 0 auto;
-    margin-top: 35px;
+.task {
+    border: 1px solid black;
+    margin-bottom: 25px;
+    padding: 10px;
+    width: 350px;
 }
+
